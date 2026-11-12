@@ -1,0 +1,90 @@
+{
+  "chainId": 4663,
+  "poolKey": {
+    "fee": 12500,
+    "hooks": "0x19bec7c2e1b2aadaf67b259744751a9960d66000",
+    "currency0": "0x5f7bb59365ce557c26dbcaa4ee9d39a4b95b7127",
+    "currency1": "0x86bfa84b95b9cf0fbc5b7caab1b53ca77431d892",
+    "tickSpacing": 60
+  },
+  "repoUrl": "https://github.com/identity-md-launches/launch-3232-workflow-contract-stage-context",
+  "version": 1,
+  "launchId": "737da9af-94db-44b5-a3c2-af6cf29c1cc2",
+  "manifest": {
+    "kind": "evm_project",
+    "pool": {
+      "fee": 12500,
+      "tickSpacing": 60,
+      "initialPrice": "79228162514264337593543950336",
+      "pairedCurrency": "0x5f7bb59365ce557c26dbcaa4ee9d39a4b95b7127"
+    },
+    "notes": "Not Firm (NOTSTOCK) on Robinhood Chain, paired with IMD. LaunchToken (src/LaunchToken.sol) is the fixed-supply ERC-20 with no owner, mint, fee, pause or upgrade. Three application contracts deploy in the launch transaction, in constructor dependency order. LpDesk(token, operator, projectWallet): token is $token; operator is the dev wallet SPEC.md fixes, 0x8ad18e99f4c8d8406f9ba8899cf308000518a981, which sets slippage outs by hand, runs buyback and holds the 2-day governance veto; projectWallet is the project wallet SPEC.md fixes, 0x3c587eff6c96eacf7e3dcc2cff6416161386e48c (written as a literal, not $owner, so it is pinned whatever owner the launch resolves; it is a payee with no owner role), which receives 25% of every non-NOTSTOCK fee. LpDesk's constructor creates Burner (not a manifest contract) and only predicts the CREATE2 addresses of its modules; after launch anyone calls deployModule(kind, code) once per kind (LpGovernor, PriceGuard, VenueV3, VenueV4, script/DeployModules.s.sol), so the modules are not manifest contracts either. FirmVault(projectWallet, lpDesk): the same project wallet literal and $contract:LpDesk; it receives the pool's 1% requester fee once the project wallet calls the factory's setRequester(launchNumber, FirmVault) after launch, and distribute(token) by anyone splits IMD 25/25/25/25 and sends NOTSTOCK to Burner. GenesisSplitter(lpDesk, devWallet): $contract:LpDesk and the same dev wallet; split() by anyone, once, sends 10/60 of its balance to the dev wallet and the rest to LpDesk after registerNotStock. No contract is allocated supply at launch: the factory mints the whole supply to itself, seeds the pool with 30%, sends 10% to the MerkleDistributor and 60% to the owner, who then transfers exactly 600,000,000 NOTSTOCK to GenesisSplitter by hand. No privileged role is given to the factory or to IMD's launch wallet; no initialization calls. The pool fields are the launch policy's: pairedCurrency IMD, fee 12500 (1.25%), tickSpacing 60; the deployer derives the opening price from the policy's 2,500 IMD opening market cap. The factory supplies the pool guard and the MerkleDistributor.",
+    "token": {
+      "name": "Not Firm",
+      "symbol": "NOTSTOCK",
+      "contract": "LaunchToken",
+      "decimals": 18
+    },
+    "contracts": [
+      {
+        "contract": "LpDesk",
+        "constructorArgs": [
+          "$token",
+          "0x8ad18e99f4c8d8406f9ba8899cf308000518a981",
+          "0x3c587eff6c96eacf7e3dcc2cff6416161386e48c"
+        ]
+      },
+      {
+        "contract": "FirmVault",
+        "constructorArgs": [
+          "0x3c587eff6c96eacf7e3dcc2cff6416161386e48c",
+          "$contract:LpDesk"
+        ]
+      },
+      {
+        "contract": "GenesisSplitter",
+        "constructorArgs": [
+          "$contract:LpDesk",
+          "0x8ad18e99f4c8d8406f9ba8899cf308000518a981"
+        ]
+      }
+    ]
+  },
+  "contracts": [
+    {
+      "name": "LaunchToken",
+      "txHash": "0xe25158b80f13690213e21507ab2541e2dffe58198e1c589591d2cfc7a7484ec0",
+      "abiHash": "fc4fab013a5168c8b768eb9277ce85fdc9e5b2f94f8e2cd48f4dc0499e4c63d4",
+      "address": "0x86bfa84b95b9cf0fbc5b7caab1b53ca77431d892",
+      "blockNumber": 112566380,
+      "creationCodeHash": "8e31a9c5947329b93f5e911883236bd7f473c127b1dc8408cab32c6435e51f6d"
+    },
+    {
+      "name": "LpDesk",
+      "txHash": "0xe25158b80f13690213e21507ab2541e2dffe58198e1c589591d2cfc7a7484ec0",
+      "abiHash": "6d5bd473921efd3ea2e4dcec0bb6589402308a26a2b1973f7da5304c5560f8cb",
+      "address": "0x7656e5f67ba549f7483c126b34e65efd445c76a9",
+      "blockNumber": 112566380,
+      "creationCodeHash": "02b3478c17af859be9d40c249d272897654046f5f82ebeb59c85a05ec4056f25"
+    },
+    {
+      "name": "FirmVault",
+      "txHash": "0xe25158b80f13690213e21507ab2541e2dffe58198e1c589591d2cfc7a7484ec0",
+      "abiHash": "59757cdd210fc29824f3c49a3029ca6944fa3eb283144710759885df2308c18b",
+      "address": "0xa52999cc8d486b4d86ad64da57f9a546e075c70b",
+      "blockNumber": 112566380,
+      "creationCodeHash": "2883fa3d4d3cab111ec7e714abfc3810631a974c34335519a773d9bb9af457be"
+    },
+    {
+      "name": "GenesisSplitter",
+      "txHash": "0xe25158b80f13690213e21507ab2541e2dffe58198e1c589591d2cfc7a7484ec0",
+      "abiHash": "43b2747005276d0453d7c5809bfff696ce847ec28f326120a52ec0585430e7c6",
+      "address": "0xf06b4a3d3e1fb26bae1f2b7dade0c1d7803dc2c6",
+      "blockNumber": 112566380,
+      "creationCodeHash": "4959d78e82ba338e3c20f37ef92ca4fdc1cd35445d7fb02d52a9490476dccb85"
+    }
+  ],
+  "sourceCommit": "07317d5f93e9fb486c5ceca471ec749379af804f",
+  "abiInstructions": "Build ABIs from this exact source commit; compare canonicalKeccak(abi) with abiHash. Verify deployed code on the stated chain before enabling transactions.",
+  "attestationHash": "f440b5ad28c5db5fd25be9736d4840eccb114171336ee080cb9cf61348e9d968"
+}

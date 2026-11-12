@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-11-12T14:15:21.432Z",
+  "sourceBlock": "112588864",
+  "liveTransactionsBroadcast": false,
+  "results": [
+    {
+      "name": "All four exact module bytecodes deployed on the live-chain fork",
+      "passed": true
+    },
+    {
+      "name": "Actual factory setRequester, registerNotStock and exact genesis split work on the fork",
+      "passed": true
+    },
+    {
+      "name": "Fork browser: non-operator cannot see operator actions",
+      "passed": true
+    },
+    {
+      "name": "Venue picker exactly matches live PriceGuard.venues()",
+      "passed": true,
+      "venues": 3
+    },
+    {
+      "name": "Fork browser: operator opens a real single-sided v4 position during bootstrap; Close active",
+      "passed": true
+    },
+    {
+      "name": "Executed AddVenue on the fork appears in the picker without a site change",
+      "passed": true,
+      "addedVenue": "0x8afb582efd2b41baa77b21a7e87fc83ed0a867a7"
+    },
+    {
+      "name": "Fork browser: bootstrap expiry disables Open; Close succeeds after expiry",
+      "passed": true
+    },
+    {
+      "name": "No JavaScript errors in fork browser",
+      "passed": true
+    }
+  ]
+}

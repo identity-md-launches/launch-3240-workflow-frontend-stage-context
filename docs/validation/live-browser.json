@@ -1,0 +1,9 @@
+{
+  "checkedAt": "2026-11-12T14:50:33.703Z",
+  "readOnly": true,
+  "nodeTransportBridge": true,
+  "requests": 33,
+  "errors": [],
+  "rpcErrors": [],
+  "state": "Live setup read and rendered; module deploy buttons present, disabled without wallet."
+}

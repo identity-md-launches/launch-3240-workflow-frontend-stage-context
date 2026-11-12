@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-11-12T14:54:13.960Z",
+  "sourceCommit": "07317d5f93e9fb486c5ceca471ec749379af804f",
+  "changedFiles": 109,
+  "uncompressedChangedFileBytes": 4595370,
+  "submissionLimitBytes": 8388608,
+  "exportedAssets": 25,
+  "exportBytesIncludingManifest": 1405956,
+  "allowedPathsOnly": true,
+  "noDependencyArtifacts": true,
+  "noSubmodules": true,
+  "allAssetHashesMatch": true,
+  "explicitIgnoreFileBudget": "web/.gitignore"
+}

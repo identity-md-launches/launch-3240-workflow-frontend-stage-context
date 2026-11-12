@@ -1,0 +1,57 @@
+[
+  {
+    "finding": "Shared setup explanation",
+    "location": "web/src/Home.tsx:361",
+    "fixed": true
+  },
+  {
+    "finding": "Named network landmark",
+    "location": "web/src/App.tsx:330",
+    "fixed": true
+  },
+  {
+    "finding": "Allowance reset/fetch dependencies",
+    "location": "web/src/Home.tsx:75",
+    "fixed": true
+  },
+  {
+    "finding": "Stable staged transaction identity",
+    "location": "web/src/Home.tsx:202",
+    "fixed": true
+  },
+  {
+    "finding": "Staking stage identity",
+    "location": "web/src/Governance.tsx:146",
+    "fixed": true
+  },
+  {
+    "finding": "Receipt status with new prerequisite",
+    "location": "web/src/components.tsx:104",
+    "fixed": true
+  },
+  {
+    "finding": "Parallel verified ABI loading",
+    "location": "web/src/config.ts:141",
+    "fixed": true
+  },
+  {
+    "finding": "Event-based weekly dead balance change",
+    "location": "web/src/chain.ts:487",
+    "fixed": true
+  },
+  {
+    "finding": "Undeployed unstake value",
+    "location": "web/src/Governance.tsx:138",
+    "fixed": true
+  },
+  {
+    "finding": "Selected signer recheck",
+    "location": "web/src/App.tsx:195",
+    "fixed": true
+  },
+  {
+    "finding": "Live pool price with preserved manual fields",
+    "location": "web/src/Operator.tsx:70",
+    "fixed": true
+  }
+]

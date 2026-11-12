@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-11-12T14:43:36.961Z",
+  "commands": [
+    {
+      "command": "npm run build (web/)",
+      "exitCode": 0,
+      "includes": [
+        "tsc --noEmit",
+        "vite build",
+        "manifest generation"
+      ]
+    },
+    {
+      "command": "npm test (web/)",
+      "exitCode": 0,
+      "passed": 10
+    },
+    {
+      "command": "node web/scripts/manifest.mjs --check",
+      "exitCode": 0
+    }
+  ],
+  "manifestSha256": "a5448fdc43d256f46f2081b75a8b3ec70259ea77f68f8eae388a7d8d826fb807",
+  "filesOtherThanManifest": 25,
+  "exportBytesExcludingManifest": 1399841
+}

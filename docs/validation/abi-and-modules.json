@@ -1,0 +1,89 @@
+{
+  "sourceCommit": "07317d5f93e9fb486c5ceca471ec749379af804f",
+  "abi": [
+    {
+      "name": "LaunchToken",
+      "canonicalKeccak": "fc4fab013a5168c8b768eb9277ce85fdc9e5b2f94f8e2cd48f4dc0499e4c63d4",
+      "pinnedSourceVerified": true,
+      "compiledAbiMatches": true
+    },
+    {
+      "name": "LpDesk",
+      "canonicalKeccak": "6d5bd473921efd3ea2e4dcec0bb6589402308a26a2b1973f7da5304c5560f8cb",
+      "pinnedSourceVerified": true,
+      "compiledAbiMatches": true
+    },
+    {
+      "name": "FirmVault",
+      "canonicalKeccak": "59757cdd210fc29824f3c49a3029ca6944fa3eb283144710759885df2308c18b",
+      "pinnedSourceVerified": true,
+      "compiledAbiMatches": true
+    },
+    {
+      "name": "GenesisSplitter",
+      "canonicalKeccak": "43b2747005276d0453d7c5809bfff696ce847ec28f326120a52ec0585430e7c6",
+      "pinnedSourceVerified": true,
+      "compiledAbiMatches": true
+    },
+    {
+      "name": "Burner",
+      "canonicalKeccak": "fd785766b9e86a35662c0dbc05b1ba653c03a8e3545dc7d324ea8736dc74d9c5",
+      "pinnedSourceVerified": true,
+      "compiledAbiMatches": true
+    },
+    {
+      "name": "LpGovernor",
+      "canonicalKeccak": "480def2521c67bf624af4d57e53610e43be533bc46bc1661d02cd735c1dc2cb4",
+      "pinnedSourceVerified": true,
+      "compiledAbiMatches": true
+    },
+    {
+      "name": "PriceGuard",
+      "canonicalKeccak": "49df40c46e4a9d031a8df1baa3f1c834f01bd732deba499644284831e72fe666",
+      "pinnedSourceVerified": true,
+      "compiledAbiMatches": true
+    },
+    {
+      "name": "VenueV3",
+      "canonicalKeccak": "50e5958c4f8e4924cd154ac35e1a7c00d62efcfe61034edafc9cf73ac81dfac5",
+      "pinnedSourceVerified": true,
+      "compiledAbiMatches": true
+    },
+    {
+      "name": "VenueV4",
+      "canonicalKeccak": "45b5206a36629b51722cb23f7016bcf19a34824d662395c7f652b3c1b443ba92",
+      "pinnedSourceVerified": true,
+      "compiledAbiMatches": true
+    }
+  ],
+  "modules": [
+    {
+      "kind": 0,
+      "name": "LpGovernor",
+      "creationCodeHash": "0x950d93daedd06fac5d03b1811ffb9225e1fadbdf4923bd7d6b064e01ba1c0729",
+      "bytes": 13479,
+      "matchesOnChain": true
+    },
+    {
+      "kind": 1,
+      "name": "PriceGuard",
+      "creationCodeHash": "0xf35f9b9e2d830f1ddff4e25aa6296ffbfd9234d46ccfe6a5d38e4ad870ab0bc8",
+      "bytes": 9110,
+      "matchesOnChain": true
+    },
+    {
+      "kind": 2,
+      "name": "VenueV3",
+      "creationCodeHash": "0xb0278c0b1e4a0a41235e60bb126e111586c6e9e44e4062db18edf60e47d47349",
+      "bytes": 7633,
+      "matchesOnChain": true
+    },
+    {
+      "kind": 3,
+      "name": "VenueV4",
+      "creationCodeHash": "0x91be9ed72e94f5da8f4f7155221beb8106829e93ff88ab06d54269e125e2994c",
+      "bytes": 11638,
+      "matchesOnChain": true
+    }
+  ]
+}

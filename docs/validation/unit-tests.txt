@@ -1,0 +1,18 @@
+✔ pinned application ABI hashes use canonical Keccak (23.258087ms)
+✔ decimal amounts reject rounding, signs, exponents and balance excess (1.927779ms)
+✔ tick math preserves pinned minimum, zero and maximum ratios (3.573757ms)
+✔ price respects token order and asset decimals (1.850287ms)
+✔ position preview enforces 99.5% minimums and single-sided denomination (1.109059ms)
+✔ Robinhood swap uses exact attested key and six-field extended tuple (158.081018ms)
+✔ unknown chain adds exact handoff parameters then switches again (3.305298ms)
+✔ wallet rejection never triggers chain addition (2.029813ms)
+✔ all implementation custom errors have a plain-language translation (2.852122ms)
+✔ weekly dead balance change uses exact transfer events without archived state (5.737413ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9000.39815

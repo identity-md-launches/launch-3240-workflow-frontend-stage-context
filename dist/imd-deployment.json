@@ -1,0 +1,189 @@
+{
+  "version": 1,
+  "launchId": "737da9af-94db-44b5-a3c2-af6cf29c1cc2",
+  "chainId": 4663,
+  "sourceCommit": "07317d5f93e9fb486c5ceca471ec749379af804f",
+  "attestationHash": "f440b5ad28c5db5fd25be9736d4840eccb114171336ee080cb9cf61348e9d968",
+  "contracts": [
+    {
+      "name": "LaunchToken",
+      "address": "0x86bfa84b95b9cf0fbc5b7caab1b53ca77431d892",
+      "abiHash": "fc4fab013a5168c8b768eb9277ce85fdc9e5b2f94f8e2cd48f4dc0499e4c63d4",
+      "abiPath": "abi/LaunchToken.json"
+    },
+    {
+      "name": "LpDesk",
+      "address": "0x7656e5f67ba549f7483c126b34e65efd445c76a9",
+      "abiHash": "6d5bd473921efd3ea2e4dcec0bb6589402308a26a2b1973f7da5304c5560f8cb",
+      "abiPath": "abi/LpDesk.json"
+    },
+    {
+      "name": "FirmVault",
+      "address": "0xa52999cc8d486b4d86ad64da57f9a546e075c70b",
+      "abiHash": "59757cdd210fc29824f3c49a3029ca6944fa3eb283144710759885df2308c18b",
+      "abiPath": "abi/FirmVault.json"
+    },
+    {
+      "name": "GenesisSplitter",
+      "address": "0xf06b4a3d3e1fb26bae1f2b7dade0c1d7803dc2c6",
+      "abiHash": "43b2747005276d0453d7c5809bfff696ce847ec28f326120a52ec0585430e7c6",
+      "abiPath": "abi/GenesisSplitter.json"
+    }
+  ],
+  "poolKey": {
+    "fee": 12500,
+    "hooks": "0x19bec7c2e1b2aadaf67b259744751a9960d66000",
+    "currency0": "0x5f7bb59365ce557c26dbcaa4ee9d39a4b95b7127",
+    "currency1": "0x86bfa84b95b9cf0fbc5b7caab1b53ca77431d892",
+    "tickSpacing": 60
+  },
+  "network": {
+    "chainId": 4663,
+    "name": "Robinhood Chain",
+    "testnet": false,
+    "rpcUrls": [
+      "https://robinhood-rpc.publicnode.com",
+      "https://rpc.mainnet.chain.robinhood.com"
+    ],
+    "explorer": "https://robin.etherscan.io",
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "faucets": [],
+    "uniswapV4": {
+      "poolManager": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+      "universalRouter": "0x8876789976decbfcbbbe364623c63652db8c0904",
+      "quoter": "0x8dc178efb8111bb0973dd9d722ebeff267c98f94",
+      "stateView": "0xf3334192d15450cdd385c8b70e03f9a6bd9e673b",
+      "positionManager": "0x58daec3116aae6d93017baaea7749052e8a04fa7",
+      "permit2": "0x000000000022d473030f116ddee9f6b43ac78ba3",
+      "extendedSwapParams": true
+    },
+    "pairToken": {
+      "address": "0x5f7bb59365ce557c26dbcaa4ee9d39a4b95b7127",
+      "symbol": "IMD",
+      "name": "Identity.md",
+      "decimals": 18
+    }
+  },
+  "walletAddChain": {
+    "chainId": "0x1237",
+    "chainName": "Robinhood Chain",
+    "rpcUrls": [
+      "https://robinhood-rpc.publicnode.com",
+      "https://rpc.mainnet.chain.robinhood.com"
+    ],
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "blockExplorerUrls": [
+      "https://robin.etherscan.io"
+    ]
+  },
+  "assets": [
+    {
+      "path": "abi/Burner.json",
+      "sha256": "becc09f1257029240e87284f02ae50f9e1393c0f4cab53269b5ef14a2fa064cf"
+    },
+    {
+      "path": "abi/FirmVault.json",
+      "sha256": "1ea915eb4b609d2c6a406e7e983cd45e462ccc8255e9617ba663537ba36fe5df"
+    },
+    {
+      "path": "abi/GenesisSplitter.json",
+      "sha256": "516a470c2d5709a11c9afc39a1591416e2f0efb066b39fa95e1404a7f347cb0b"
+    },
+    {
+      "path": "abi/LaunchToken.json",
+      "sha256": "301583f27c67663a0b40c7b9cdc03ca0c229891d1854d40ee7128e9fff17b911"
+    },
+    {
+      "path": "abi/LpDesk.json",
+      "sha256": "51fa0086200aa8b0d17db2765dca118f530c14370679eee6495f5e736b2c98e6"
+    },
+    {
+      "path": "abi/LpGovernor.json",
+      "sha256": "28050ca0af773b955b9cecaed1cac328ec3ef99fe4c8e5087aab39d73f5c0920"
+    },
+    {
+      "path": "abi/PriceGuard.json",
+      "sha256": "fdd66533f63166390ac9b9ce8b6e9b28272062231b1a2384ae2fd929df9de03d"
+    },
+    {
+      "path": "abi/VenueV3.json",
+      "sha256": "637d5e1d9984d0b0adaa7c6e2462aa520a73262a2e7d6c5f059241658bf2f494"
+    },
+    {
+      "path": "abi/VenueV4.json",
+      "sha256": "9409d090191d8c6f334c37e9ba88b1cfe0f8957323650ae7f24f48151f7f842e"
+    },
+    {
+      "path": "assets/dist-PbStzQ9p.js",
+      "sha256": "f1c4182b768d3cd739d8bcca2c1951f8d75fcf69808524a7d04bf87b899baaf2"
+    },
+    {
+      "path": "assets/index-BPGFmGDF.js",
+      "sha256": "ad96b222fcb1c879e45dcf5ef3764910f2fee7af9371a2b5283f85e31f748bd9"
+    },
+    {
+      "path": "assets/index-C1gqPI11.css",
+      "sha256": "ae56ad9407668ae5ab41cf9e02c40c026fd56915b47ecaa4e5a7506dd8e90790"
+    },
+    {
+      "path": "assets/index-In9oPp3V.js",
+      "sha256": "3904c738260b0a215ab11c664be14e0c4ea5cba0b66b6145d9bac31dfd5a7c4d"
+    },
+    {
+      "path": "favicon.png",
+      "sha256": "f29e6f8a33f33a28e9abe5664f952fa58fe76c988a35f101c3dbb1189ce80e29"
+    },
+    {
+      "path": "index.html",
+      "sha256": "19cfb4a6d97c6a7153a358ec9c08c62703f23003593a8404b64a5fe7b2ddb292"
+    },
+    {
+      "path": "logo.png",
+      "sha256": "75c5041c5e5713b6ac27fd88bfdafd0bb941f611a4b614b78ef5c1bee5719fea"
+    },
+    {
+      "path": "modules/LpGovernor.json",
+      "sha256": "3dec2ab8da12c6ce2a303f68bb6cba48c4c783d4862df8e238dcc0c61bce69dd"
+    },
+    {
+      "path": "modules/PriceGuard.json",
+      "sha256": "52d5cede4aa0e9595a7130aa04049beab73803cac349287ea62b3478aecb97fa"
+    },
+    {
+      "path": "modules/VenueV3.json",
+      "sha256": "3cb91319032d6592e6cd535903cf8415b5e4a0cbbf5b6d4916426ad6fdf41340"
+    },
+    {
+      "path": "modules/VenueV4.json",
+      "sha256": "50c1ece31c728c441683c611ab91e84ae3f46a140f637a41f9cbbd5767b441d7"
+    },
+    {
+      "path": "share.png",
+      "sha256": "5a1a7e90d6c60136bc8dd4c62d1fc66af7e0de31f70338a8687164df5303b3b9"
+    },
+    {
+      "path": "wallets/coinbase.svg",
+      "sha256": "ab2d64bdbb8f4ffdcbfdb04167f622d4ac64bbcade1a1bc937761478f1efa62f"
+    },
+    {
+      "path": "wallets/metamask.svg",
+      "sha256": "892c7dfab8c4ca5682878dda3f42f55a75195d7d365e4adb0832845f3a0a2135"
+    },
+    {
+      "path": "wallets/phantom.svg",
+      "sha256": "f841f8112e131259a2e5123177950099c79487e61e77971f4e193e6c374419eb"
+    },
+    {
+      "path": "wallets/rabby.svg",
+      "sha256": "dcae4de88ebfa10cffa1fe28df13d7c8c0b40736ef2b704f1f2fc348e777e443"
+    }
+  ]
+}

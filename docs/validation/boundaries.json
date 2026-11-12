@@ -1,0 +1,29 @@
+{
+  "results": [
+    {
+      "name": "Maximum uint256 wallet balances wrap at 320 and 390 without horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Permissionless FirmVault distribution is previewed and signed by the visitor",
+      "passed": true
+    },
+    {
+      "name": "Cancelling transaction review sends no wallet transaction",
+      "passed": true
+    },
+    {
+      "name": "Wallet transaction rejection is explained and sends nothing",
+      "passed": true
+    },
+    {
+      "name": "Operator pool quote refreshes on new blocks without overwriting manual price or range",
+      "passed": true
+    },
+    {
+      "name": "Tampered implementation ABI fails closed before actions are shown",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

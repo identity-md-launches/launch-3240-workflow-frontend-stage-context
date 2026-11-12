@@ -1,0 +1,156 @@
+{
+  "results": [
+    {
+      "name": "Disconnected reads and no external script/font/frame before Connect",
+      "passed": true
+    },
+    {
+      "name": "Home no horizontal overflow at 320",
+      "passed": true,
+      "viewport": 320,
+      "scroll": 320
+    },
+    {
+      "name": "Home no horizontal overflow at 390",
+      "passed": true,
+      "viewport": 390,
+      "scroll": 390
+    },
+    {
+      "name": "Product and ETH buy action visible on first 390 screen",
+      "passed": true
+    },
+    {
+      "name": "Home no horizontal overflow at 768",
+      "passed": true,
+      "viewport": 768,
+      "scroll": 768
+    },
+    {
+      "name": "Home no horizontal overflow at 1440",
+      "passed": true,
+      "viewport": 1440,
+      "scroll": 1440
+    },
+    {
+      "name": "Wallet sheet no overflow at 390",
+      "passed": true,
+      "viewport": 390,
+      "scroll": 390
+    },
+    {
+      "name": "Native wallet dialog Escape and focus restoration",
+      "passed": true
+    },
+    {
+      "name": "Wallet rejection is recoverable",
+      "passed": true
+    },
+    {
+      "name": "Burner deposit, Max and over-balance guard",
+      "passed": true
+    },
+    {
+      "name": "Burn no overflow at 390",
+      "passed": true,
+      "viewport": 390,
+      "scroll": 390
+    },
+    {
+      "name": "Permissionless Burner burn and receipt refresh",
+      "passed": true
+    },
+    {
+      "name": "Non-operator has no operator controls",
+      "passed": true
+    },
+    {
+      "name": "Exact staking approval, stake and unstake",
+      "passed": true
+    },
+    {
+      "name": "Proposal vote uses connected wallet",
+      "passed": true
+    },
+    {
+      "name": "Expired proposal has no execute action",
+      "passed": true
+    },
+    {
+      "name": "Executed AddVenue updates live venue list",
+      "passed": true
+    },
+    {
+      "name": "LP Desk no overflow at 390",
+      "passed": true,
+      "viewport": 390,
+      "scroll": 390
+    },
+    {
+      "name": "IMD approval, Permit2 approval and simulated router swap",
+      "passed": true
+    },
+    {
+      "name": "Unknown chain adds exact walletAddChain and retries switch",
+      "passed": true
+    },
+    {
+      "name": "Rejected chain switch keeps writes disabled and can be retried",
+      "passed": true
+    },
+    {
+      "name": "BridgeOut quotes LayerZero fee, displays it before signing and sends exact native value",
+      "passed": true
+    },
+    {
+      "name": "Operator Open during bootstrap and Collect",
+      "passed": true
+    },
+    {
+      "name": "Custom revert is explained before signing",
+      "passed": true
+    },
+    {
+      "name": "Operator Close during bootstrap",
+      "passed": true
+    },
+    {
+      "name": "Bootstrap expiry disables Open while Close stays active",
+      "passed": true
+    },
+    {
+      "name": "Operator controls no overflow at 320",
+      "passed": true,
+      "viewport": 320,
+      "scroll": 320
+    },
+    {
+      "name": "Axe accessibility: no serious or critical violations",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "name": "Setup deployment uses embedded creation code; funding/register prerequisites enforced",
+      "passed": true
+    },
+    {
+      "name": "Full setup order, exact 600m funding, fixed launch number and completed-action hiding",
+      "passed": true
+    },
+    {
+      "name": "Mobile wallet deep links have no horizontal overflow",
+      "passed": true,
+      "viewport": 390,
+      "scroll": 390
+    },
+    {
+      "name": "Missing mobile wallet offers all four wallet browsers and Coinbase Smart Wallet",
+      "passed": true
+    },
+    {
+      "name": "No browser JavaScript errors across interactions",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

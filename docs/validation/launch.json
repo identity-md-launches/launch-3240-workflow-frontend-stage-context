@@ -1,0 +1,68 @@
+{
+  "checkedAt": "2026-11-12T14:45:57.743Z",
+  "chainId": 4663,
+  "block": "112607708",
+  "launchNumber": "3232",
+  "receiptHash": "0xe25158b80f13690213e21507ab2541e2dffe58198e1c589591d2cfc7a7484ec0",
+  "gasUsed": "8393202",
+  "factory": "0x9C9D2FCB75c2C132C0AC0C42DF3819A42347265e",
+  "registry": "0xF52bbE066B7Ad2d28C2195D066Ea08DCbcA88406",
+  "poolKey": {
+    "currency0": "0x5F7Bb59365ce557C26dbcAa4EE9d39A4b95B7127",
+    "currency1": "0x86bfa84b95b9CF0fbC5b7CAAB1b53cA77431D892",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "hooks": "0x19Bec7C2E1b2aadAf67b259744751a9960d66000"
+  },
+  "feeRecipient": "0x3c587Eff6c96eAcF7E3dcC2CFf6416161386E48C",
+  "code": [
+    {
+      "name": "LaunchToken",
+      "address": "0x86bfa84b95b9cf0fbc5b7caab1b53ca77431d892",
+      "codeBytes": 1133
+    },
+    {
+      "name": "LpDesk",
+      "address": "0x7656e5f67ba549f7483c126b34e65efd445c76a9",
+      "codeBytes": 19858
+    },
+    {
+      "name": "FirmVault",
+      "address": "0xa52999cc8d486b4d86ad64da57f9a546e075c70b",
+      "codeBytes": 4358
+    },
+    {
+      "name": "GenesisSplitter",
+      "address": "0xf06b4a3d3e1fb26bae1f2b7dade0c1d7803dc2c6",
+      "codeBytes": 1119
+    }
+  ],
+  "modules": [
+    {
+      "kind": 0,
+      "address": "0xf36474fe198211aC893f468bE7D48bC0a44A1146",
+      "deployed": false
+    },
+    {
+      "kind": 1,
+      "address": "0xa6cFE9c2DA2cb009fB0c338082EA0d4161FA3fa0",
+      "deployed": false
+    },
+    {
+      "kind": 2,
+      "address": "0xe8a7878785Af47F81c4ee33BD03cbe4914d866F7",
+      "deployed": false
+    },
+    {
+      "kind": 3,
+      "address": "0x27dD8d2bbc6152ec29058f948F1A90B50Dd16F58",
+      "deployed": false
+    }
+  ],
+  "burner": "0x51a0D44d4daaD4e3Cef888AA0ce57dE4F1667475",
+  "operator": "0x8Ad18E99F4C8d8406f9Ba8899CF308000518A981",
+  "projectWallet": "0x3c587Eff6c96eAcF7E3dcC2CFf6416161386E48C",
+  "registered": false,
+  "bootstrapEnd": "0",
+  "transactionsBroadcast": false
+}

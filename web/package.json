@@ -1,0 +1,32 @@
+{
+  "name": "not-firm-interface",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit && vite build && node scripts/manifest.mjs",
+    "preview": "vite preview --host 0.0.0.0",
+    "verify": "node scripts/manifest.mjs --check",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "test:browser": "node --import tsx scripts/browser-check.mjs"
+  },
+  "dependencies": {
+    "@coinbase/wallet-sdk": "^4.3.6",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "viem": "^2.38.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.11.0",
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "prettier": "^3.10.1",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.0"
+  }
+}
